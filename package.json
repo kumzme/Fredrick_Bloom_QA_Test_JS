@@ -1,0 +1,33 @@
+{
+  "name": "Yes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "_Jest": "jest --config=jest.config.js"
+  },
+  "keywords": [],
+  "author": "Mahesh_Prem",
+  "license": "test",
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "chromedriver": "^80.0.1",
+    "jest": "^25.1.0",
+    "js-yaml": "^3.13.1",
+    "rest": "^2.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.5",
+    "request": "latest"
+  },
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "jest": "^25.1.0",
+    "rest": "^2.0.0",
+    "js-yaml": "^3.13.1",
+    "chromedriver": "^80.0.1",
+    "selenium-webdriver": "^4.0.0-alpha.5",
+    "request": "latest"
+  }
+}
