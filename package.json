@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install": "npm install",
+    "____install": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "_Jest": "jest --config=jest.config.js"
   },
