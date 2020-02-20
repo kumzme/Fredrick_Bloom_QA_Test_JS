@@ -5,7 +5,6 @@ const {API_Get} = require('../Suite_Functions/API_Functions');
 
 // Test 01 - Fikrst navigate to Expedia and login
 
-/*
 test('Navigate to Expedia .com',async function aa() {
     jest.setTimeout(parseInt( __Test_Project_Properties['Global_Test_Timeout'] ) );
     console.log("_______");
@@ -26,7 +25,7 @@ test('Navigate to Expedia .com',async function aa() {
     setTimeout(function(){}, 3000);
     //await Delay_For(10000000000);
 });
-*/
+
 
 // Test 02 - get API and parse  a body
 test('Get API from http://dummy.restapiexample.com',async () => {
