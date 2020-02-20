@@ -1,6 +1,7 @@
 # Liberty Tek Systems
 
-I ve added the project here Fredrick. Please take alook
+I ve added the project here Fredrick. I have also ensured to have a windows video recording. 
+From checking out code to running the tests. Please have a look.
 
 ## Getting Started
 
