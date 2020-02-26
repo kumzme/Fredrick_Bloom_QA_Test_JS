@@ -23,9 +23,9 @@ describe('Login to Github', async () => {
         console.log(Some_Class);
         let kv1 =  Some_Class = { user:"aa", 1:"Steve" }; // OK
         console.log(kv1);
-        let kvp: User_Creds =         require('../Suite_Functions/Id_Pwd.ts').addKeyValue();
+        let some_fun =         require('../Suite_Functions/Id_Pwd.ts').addKeyValue;
 
-        /*Trying to Use interface .. using babel in progress*/ kvp('111', 'Bill');
+        /*Trying to Use interface .. using babel in progress*/ some_fun('111', 'Bill');
         done();
     });
 

@@ -6,7 +6,7 @@ interface Jenkins_User {
     login: (user: string, password: string) => boolean;
 }
 
-export function addKeyValue(user:string, password:string):void {
+export default function addKeyValue(user:string, password:string):void {
     console.log('addKeyValue: key = ' + user + ', value = ' + password)
 }
 
