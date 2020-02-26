@@ -3,3 +3,4 @@ Login_Pwd_02: mahesh
 
 Expedia_URL: "https://www.Expedia.com"
 API_URL: "http://dummy.restapiexample.com/api/v1/employees"
+API_POST_URL: 'https://reqres.in/api/users'
