@@ -25,7 +25,7 @@ module.exports = {
         __Test_Data: Load_All_Test_Data,
         __Test_Locators: Load_All_Test_Locators,
         __Test_Project_Properties: Load_All_Project_Properties,
-        __Chrome_Driver: {},
+        __Chrome_Driver: null,
         __Global_Var: []
     },
     reporters: [

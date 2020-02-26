@@ -6,7 +6,7 @@ async function Navigate( URL_String_Reference){
     let Input_Url = __Test_Data[URL_String_Reference];
     console.log(__Test_Data);
     console.log(typeof __Chrome_Driver);
-    await global.__Chrome_Driver.get(Input_Url);
+    await __Chrome_Driver.get(Input_Url);
 }
 async function Set_Text( Locator_Reference, Text_Reference){
     let Input_Text = __Test_Data[Text_Reference];
@@ -23,11 +23,16 @@ async function Click_Element( Locator_Reference){
     await aa.click();
 }
 
+async function Take_Screenshot(){
+
+    await __Chrome_Driver.takeScreenshot();
+}
+
 async function Get_Text(Locator_Reference) {
     let aa = await Find_Element(Locator_Reference);
     return await aa.getText();
 }
 
 module.exports ={
-    Set_Text, Navigate, Click_Element, Get_Text
+    Set_Text, Navigate, Click_Element, Get_Text, Take_Screenshot
 };

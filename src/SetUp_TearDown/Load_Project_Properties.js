@@ -11,11 +11,10 @@ import {Global_TimeOut} from '../resources/Constants/Constants'
 };
 
 global.beforeAll(async (done) => {
-    // global.__Chrome_Driver =  await Load_Chrome_Driver();
+    global.__Chrome_Driver =  await Load_Chrome_Driver();
     done()
 });
 
 global.beforeEach(() => {
-    jest.setTimeout(Global_TimeOut)
-
+    jest.setTimeout(parseInt(__Test_Project_Properties['Global_Test_Timeout']));
 });

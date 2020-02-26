@@ -1,31 +1,39 @@
-import {findAllByKey} from "../Suite_Functions/Generic";
-let body_ = {};
+// let body_ = {};
 let body2_ = {};
-const {Navigate, Set_Text, Click_Element, Get_Text} = require('../Suite_Functions/Element_Functions');
+const { Take_Screenshot , Navigate, Set_Text, Click_Element, Get_Text} = require('../Suite_Functions/Element_Functions');
+
 const {Delay_For} = require('../Suite_Functions/Generic');
 const {API_Get} = require('../Suite_Functions/API_Functions.js');
 
 
-// Test 01 - Fikrst navigate to Expedia and login
+// Test 01 - First navigate to Expedia and login
 
 
-test('Navigate to Expedia .com',async function aa() {
-    jest.setTimeout(parseInt( __Test_Project_Properties['Global_Test_Timeout'] ) );
-    console.log("_______");
-    console.log(__Chrome_Driver);
-    console.log(global.__Chrome_Driver);
-    // setTimeout(function(){}, 3000);
+describe('Navigate to Expedia .com', async () => {
 
-    await Navigate( 'Expedia_URL');
-    await Set_Text( 'Expedia_Origin_Search_Page','Origin_01');
-    await Set_Text('Expedia_Destination_Search_Page','Destination_01');
-    await Set_Text( 'Expedia_Start_Date_Search_Page','Start_Date_01');
-    await Set_Text( 'Expedia_End_Date_Search_Page','End_Date_01');
-    await Click_Element( 'Expedia_Search_Button_Search_Page');
-    let error_Text = await Get_Text( 'Expedia_Search_Alert_Error');
-    let error_Text_Expected = __Test_Data['Destination_01_Error'];
-    var re = new RegExp(error_Text_Expected,"g");
-    expect(error_Text).toMatch(re);
+
+    test('Navigate to Expedia .com',async function aa(done) {
+        jest.setTimeout(parseInt( __Test_Project_Properties['Global_Test_Timeout'] ) );
+        console.log("_______");
+        console.log(__Chrome_Driver);
+        console.log(global.__Chrome_Driver);
+        // setTimeout(function(){}, 3000);
+
+        await Navigate( 'Expedia_URL');
+        await Set_Text( 'Expedia_Origin_Search_Page','Origin_01');
+        await Set_Text('Expedia_Destination_Search_Page','Destination_01');
+        await Set_Text( 'Expedia_Start_Date_Search_Page','Start_Date_01');
+        await Set_Text( 'Expedia_End_Date_Search_Page','End_Date_01');
+        await Click_Element( 'Expedia_Search_Button_Search_Page');
+        await Take_Screenshot();
+        let error_Text = await Get_Text( 'Expedia_Search_Alert_Error');
+        let error_Text_Expected = __Test_Data['Destination_01_Error'];
+        var re = new RegExp(error_Text_Expected,"g");
+        expect(error_Text).toMatch(re);
+        done();
+    });
+
+
 });
 
 
