@@ -1,12 +1,19 @@
 Expedia_Origin_Search_Page:
   Xpath: '//div[ contains ( @data-gcw-field-available-for-sub-nav-option ,"flight-hotel,flight-hotel-car" )]//input [ contains (@id, "package-destination-hp-package")  ] '
+  Wait_Times: 20
 Expedia_Destination_Search_Page:
   Xpath: '//div[ contains ( @data-gcw-field-available-for-sub-nav-option ,"flight-hotel,flight-hotel-car" )]//input [ contains (@id, "package-origin-hp-package")  ] '
+  Wait_Times: 10
 Expedia_Start_Date_Search_Page:
   Xpath: '//div[ contains ( @data-gcw-field-available-for-sub-nav-option ,"flight-hotel,flight-hotel-car" )]//input [ contains (@id, "package-departing-hp-package")  ] '
+  Wait_Times: 10
 Expedia_End_Date_Search_Page:
   Xpath: '//div[ contains ( @data-gcw-field-available-for-sub-nav-option ,"flight-hotel,flight-hotel-car" )]//input [ contains (@id, "package-returning-hp-package")  ] '
+  Wait_Times: 10
+  Clear_Text: Lack_Of_Flag_Means_No_Clear
 Expedia_Search_Button_Search_Page:
   Xpath: '//button[ contains ( @type ,"submit" )  and contains(@id, "search-button-hp-package")]'
+  Wait_Times: 30
 Expedia_Search_Alert_Error:
   Xpath: '//div[ contains ( @id ,"errorContainer" )]//h5[contains(@class, "alert-message")]'
+  Wait_Times: 50

@@ -3,31 +3,40 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "____install": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "_Jest": "jest --config=jest.config.js"
+    "_Jest": "jest --config=jest.config.js --detectOpenHandles --runInBand",
+    "_Jest_Stare_Reporter": "jest --config=jest.config.js --detectOpenHandles --runInBand --reporters default jest-stare"
   },
   "keywords": [],
   "author": "Mahesh_Prem",
   "license": "test",
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
     "axios": "^0.19.2",
+    "babel-jest": "^25.1.0",
     "chromedriver": "^80.0.1",
     "jest": "^25.1.0",
     "js-yaml": "^3.13.1",
+    "request": "latest",
     "rest": "^2.0.0",
     "selenium-webdriver": "^4.0.0-alpha.5",
-    "request": "latest"
+    "jest-html-reporter": "^2.8.0",
+    "jest-stare": "^1.26.0"
   },
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
-    "jest": "^25.1.0",
-    "rest": "^2.0.0",
-    "js-yaml": "^3.13.1",
     "chromedriver": "^80.0.1",
+    "jest": "^25.1.0",
+    "js-yaml": "^3.13.1",
+    "request": "latest",
+    "rest": "^2.0.0",
     "selenium-webdriver": "^4.0.0-alpha.5",
-    "request": "latest"
+    "jest-html-reporter": "^2.8.0",
+    "jest-stare": "^1.26.0"
   }
 }

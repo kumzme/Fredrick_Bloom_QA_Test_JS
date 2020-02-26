@@ -2,3 +2,5 @@ Origin_01: Washington, DC (DCA-Ronald Reagan Washington National)
 Destination_01: Washington, DC (IAD-Washington Dulles Intl.)
 
 Destination_01_Error: "We were unable to find any flights for your package. Please adjust your search or"
+
+Api_Call_Expect_Some_Values: [ 'Brielle Williamson', 'Rhona Davidson', 'Sonya Frost', 'Quinn Flynn', 'Haley Kennedy', 'Michael Silva', 'Gloria Little', 'Dai Rios', 'Yuri Berry', 'Doris Wilder' ]

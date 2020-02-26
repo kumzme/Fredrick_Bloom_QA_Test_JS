@@ -1,0 +1,96 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 3,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 3,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1582676812107,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1582676822841,
+        "start": 1582676815252
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "D:\\Projects\\WebstormProjects\\Fredrick_Bloom_QA_Test_JS_Test\\src\\Tests_Main\\01_Navigate_Expedia.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Get API from http://dummy.restapiexample.com"
+          ],
+          "duration": 1853,
+          "failureMessages": [],
+          "fullName": "Get API from http://dummy.restapiexample.com Get API from http://dummy.restapiexample.com",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "Get API from http://dummy.restapiexample.com"
+        },
+        {
+          "ancestorTitles": [
+            "Get API from http://dummy.restapiexample.com"
+          ],
+          "duration": 11,
+          "failureMessages": [],
+          "fullName": "Get API from http://dummy.restapiexample.com Data Check",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "Data Check"
+        },
+        {
+          "ancestorTitles": [
+            "Get API from http://dummy.restapiexample.com"
+          ],
+          "duration": 22,
+          "failureMessages": [],
+          "fullName": "Get API from http://dummy.restapiexample.com Data Check - Expect Some values Atleast ",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "Data Check - Expect Some values Atleast "
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}

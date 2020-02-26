@@ -4,6 +4,7 @@ let Load_All_Test_Locators = require('./src/SetUp_TearDown/Load_Test_Data.js').L
 
 module.exports = {
     verbose: true,
+    type: 'module',
     roots: [
         "./"
     ],
@@ -19,9 +20,18 @@ module.exports = {
     ],
     moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx", "node","yaml", "yml"],
     testMatch: ["<rootDir>/src/Tests_Main/*.js","<rootDir>/src/Tests_Main/**/*.js"],
+    setupFilesAfterEnv: ["<rootDir>/src/SetUp_TearDown/Load_Project_Properties.js"],
     globals: {
         __Test_Data: Load_All_Test_Data,
         __Test_Locators: Load_All_Test_Locators,
-        __Test_Project_Properties: Load_All_Project_Properties
-    }
+        __Test_Project_Properties: Load_All_Project_Properties,
+        __Chrome_Driver: {},
+        __Global_Var: []
+    },
+    reporters: [
+        "default",
+        ["./node_modules/jest-html-reporter", {
+            "pageTitle": "Test Report"
+        }]
+    ]
 };
