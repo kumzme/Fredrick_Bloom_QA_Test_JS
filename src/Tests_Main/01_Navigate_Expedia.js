@@ -8,7 +8,7 @@ const {API_Get} = require('../Suite_Functions/API_Functions.js');
 
 // Test 01 - Fikrst navigate to Expedia and login
 
-/*
+
 test('Navigate to Expedia .com',async function aa() {
     jest.setTimeout(parseInt( __Test_Project_Properties['Global_Test_Timeout'] ) );
     console.log("_______");
@@ -27,7 +27,7 @@ test('Navigate to Expedia .com',async function aa() {
     var re = new RegExp(error_Text_Expected,"g");
     expect(error_Text).toMatch(re);
 });
-*/
+
 
 
 // Test 02 - get API and parse  a body
@@ -50,8 +50,8 @@ describe('Get API from http://dummy.restapiexample.com', async () => {
     // Test 03 - get API and parse  a body
     test('Data Check', async (done) => {
         jest.setTimeout(parseInt(__Test_Project_Properties['Global_Test_Timeout']));
-        let abaa = require('../Suite_Functions/Generic.js');
-        body2_ = await abaa.Deep_Search_Json_Recursive(JSON.parse(body_), 'employee_name', []);
+        let Generic = require('../Suite_Functions/Generic.js');
+        body2_ = await Generic.Deep_Search_Json_Recursive(JSON.parse(body_), 'employee_name', []);
         done();
 
     });
@@ -61,7 +61,6 @@ describe('Get API from http://dummy.restapiexample.com', async () => {
     test('Data Check - Expect Some values Atleast ', async (done) => {
         console.log(body2_);
         jest.setTimeout(parseInt(__Test_Project_Properties['Global_Test_Timeout']));
-
         __Test_Data['Api_Call_Expect_Some_Values'].forEach(element => {
             expect(body2_).toContain(element);
         });
@@ -69,8 +68,5 @@ describe('Get API from http://dummy.restapiexample.com', async () => {
     });
 
 });
-
-
-
 
 

@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1582676812107,
+  "startTime": 1582681446282,
   "success": false,
   "testResults": [
     {
@@ -37,8 +37,8 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1582676822841,
-        "start": 1582676815252
+        "end": 1582681449672,
+        "start": 1582681447531
       },
       "skipped": false,
       "snapshot": {
@@ -50,13 +50,13 @@
         "updated": 0,
         "uncheckedKeys": []
       },
-      "testFilePath": "D:\\Projects\\WebstormProjects\\Fredrick_Bloom_QA_Test_JS_Test\\src\\Tests_Main\\01_Navigate_Expedia.js",
+      "testFilePath": "/Users/dm/Code.noindex/LibertyMutual/Fredrick_Bloom_QA_Test_JS/src/Tests_Main/01_Navigate_Expedia.js",
       "testResults": [
         {
           "ancestorTitles": [
             "Get API from http://dummy.restapiexample.com"
           ],
-          "duration": 1853,
+          "duration": 688,
           "failureMessages": [],
           "fullName": "Get API from http://dummy.restapiexample.com Get API from http://dummy.restapiexample.com",
           "location": null,
@@ -68,7 +68,7 @@
           "ancestorTitles": [
             "Get API from http://dummy.restapiexample.com"
           ],
-          "duration": 11,
+          "duration": 1,
           "failureMessages": [],
           "fullName": "Get API from http://dummy.restapiexample.com Data Check",
           "location": null,
@@ -80,7 +80,7 @@
           "ancestorTitles": [
             "Get API from http://dummy.restapiexample.com"
           ],
-          "duration": 22,
+          "duration": 6,
           "failureMessages": [],
           "fullName": "Get API from http://dummy.restapiexample.com Data Check - Expect Some values Atleast ",
           "location": null,

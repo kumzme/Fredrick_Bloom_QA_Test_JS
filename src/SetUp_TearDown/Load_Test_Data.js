@@ -24,7 +24,7 @@ var Load_All_Test_Data =    (Dir_Path, Files_Located_At) => {
 
 
 module.exports = {
-    Load_All_Test_Data: Load_All_Test_Data("\\src\\resources\\Test_Data\\", "\\src\\resources\\Test_Data\\"),
-    Load_All_Test_Locators: Load_All_Test_Data("\\src\\resources\\Test_Data_Locators\\", "\\src\\resources\\Test_Data_Locators\\"),
-    Load_All_Project_Properties: Load_All_Test_Data("\\src\\resources\\Project_Properties\\", "\\src\\resources\\Project_Properties\\")
+    Load_All_Test_Data: Load_All_Test_Data("/src/resources/Test_Data/", "/src/resources/Test_Data/"),
+    Load_All_Test_Locators: Load_All_Test_Data("/src/resources/Test_Data_Locators/", "/src/resources/Test_Data_Locators/"),
+    Load_All_Project_Properties: Load_All_Test_Data("/src/resources/Project_Properties/", "/src/resources/Project_Properties/")
 };
