@@ -47,9 +47,19 @@ describe('Post some rest data', async () => {
         var contents = fs.readFileSync(Get_Test_Data_Path() + Files_Folder + __Test_Data['File_Path_For_Post_01'], 'utf8');
         console.log(contents);
 
-        const formData = {
+        let formData = {
             my_file: fs.createReadStream(Get_Test_Data_Path() + Files_Folder + __Test_Data['File_Path_For_Post_01'])
         };
+
+        formData = {
+            "name": "morpheus29-280-82",
+            "job": "leader???"
+        };
+
+        /* OR */
+
+        formData = contents;
+
         await request.post({url:__Test_Data['API_POST_URL'], formData: formData}, function optionalCallback(err, httpResponse, body) {
             if (err) {
                 return console.error('upload failed:', err);
@@ -58,7 +68,6 @@ describe('Post some rest data', async () => {
             }
             done();
         });
-
 
     });
 

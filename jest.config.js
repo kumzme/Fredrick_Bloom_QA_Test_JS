@@ -19,7 +19,8 @@ module.exports = {
         "<rootDir>/src/Tests_Main",
     ],
     moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx", "node","yaml", "yml"],
-    testMatch: ["<rootDir>/src/Tests_Main/*.js","<rootDir>/src/Tests_Main/**/*.js"],
+    testMatch: ["<rootDir>/src/Tests_Main/*","<rootDir>/src/Tests_Main/**/*"],
+    // testMatch: ["<rootDir>/src/Tests_Main/03*.ts","<rootDir>/src/Tests_Main/**/03*.ts"],
     setupFilesAfterEnv: ["<rootDir>/src/SetUp_TearDown/Load_Project_Properties.js"],
     globals: {
         __Test_Data: Load_All_Test_Data,
