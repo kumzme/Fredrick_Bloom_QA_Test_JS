@@ -32,8 +32,6 @@ describe('Navigate to Expedia .com', async () => {
         expect(error_Text).toMatch(re);
         done();
     });
-
-
 });
 
 
